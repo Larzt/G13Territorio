@@ -1,0 +1,73 @@
+main {
+  height: 50vh;
+  max-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+main * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.border {
+  position: absolute;
+  border-radius: 18px;
+  background-color: #383c44;
+}
+
+.container #formControl {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.container #comments {
+  margin-left: 5%;
+}
+
+.container label {
+  color: white;
+}
+
+.container select {
+  width: 85%;
+  display: flex;
+  position: relative;
+  margin: 7%;
+}
+
+.container textarea {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.select-highlight {
+  background-color: yellow;
+}   
+
+.container button {
+  margin: 5%;
+  display: flex;
+  position: relative;
+  left: 9em;
+  background-color: #005eff;
+  border-radius: 18px;
+}
+
+.container button:hover {
+  background-color: #2776ff;
+  border-radius: 18px;
+}
+
+span {
+  color: red;
+}
+
+#charactersRemaining {
+  color: white;
+}

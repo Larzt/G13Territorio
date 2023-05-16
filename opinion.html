@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="icon" href="./img/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/rrss.css">
+<link rel="stylesheet" href="./css/opinion.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./src/opinion.js"></script>
+<title>Opinion</title>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">Territorio+</a>
+    <a class="navbar-brand">> Opinion</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="" href="./information.html">Información</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="./opinion.html">Opinión</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="./accessibility.html">Accesibilidad</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main tabindex="0">
+  <div class="border">
+    <div class="container">
+      <label for="exampleFormControlInput1" class="form-label" id="formControl">Correo electrónico</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="example@gmail.com">  
+      <select id="selectInput" class="form-select" aria-label="Default select example" onfocus="highlightSection(this)" onblur="removeHighlight(this)">
+        <option selected>Selecciona</option>
+        <option value="1">Teide</option>
+        <option value="2">Taburiente</option>
+        <option value="3">Garajonay</option>
+        <option value="4">Roque Nublo</option>
+        <option value="5">Timanfaya</option>
+      </select>
+      <label id="comments" for="exampleFormControlTextarea1" class="form-label">Deja tu comentario</label>
+      <textarea class="form-control" id="textareaInput" oninput="limitTextareaHeight(this, 200)"></textarea>
+      <span id="charactersRemaining">100 caracteres restantes</span>
+      <span id="habilitar"></span>
+      <button id="submitButton" type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+  <!-- <div class="mb-3 border">
+    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Selecciona</option>
+    <option value="1">Teide</option>
+    <option value="2">Taburiente</option>
+    <option value="3">Garajonay</option>
+    <option value="4">Roque Nublo</option>
+    <option value="5">Timanfaya</option>
+  </select>
+  <div class="mb-3">
+    <label id="comments" for="exampleFormControlTextarea1" class="form-label">Deja tu comentario</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div> -->
+</main>
+
+<footer class="py-5 bg-dark text-white" tabindex="0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3" id="islasPiePaginaTf">
+        <h4 tabindex="0">Santa Cruz de Tenerife</h4>
+        <ul class="islas">
+          <li><a href="./tnf.html">Parque Nacional del Teide</a></li>
+          <li><a href="./tnf.html">Parque Nacional Caldera de Taburiente</a></li>
+          <li><a href="./tnf.html">Parque Nacional Garajonay</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 islas" id="islasPiePaginaGc">
+        <h4 tabindex="0">Las Palmas de Gran Canaria</h4>
+        <ul class="islas">
+          <li><a href="./gc.html">Parque Nacional de Timanfaya</a></li>
+          <li><a href="./gc.html">Parque Rural Roque Nublo</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4 tabindex="0">opiniono</h4>
+        <p tabindex="0">Teléfono: 660839754<br>Correo electrónico: info@territorio.org</p>
+      </div>
+      <div class="col-lg-3">
+        <h4 tabindex="0">Accesibilidad</h4>
+        <p tabindex="0">Consulta nuestros atajos de teclado y mapa web</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 redesSociales">
+        <img src="./img/LOGO/instagram.png" alt="Instagram">
+      </div>
+      <div class="col-lg-3 redesSociales">
+        <img src="./img/LOGO/twitter.png" alt="Instagram">
+      </div>
+      <div class="col-lg-3 redesSociales">
+        <img src="./img/LOGO/facebook.png" alt="Instagram">
+      </div>
+      <div class="col-lg-3 redesSociales">
+        <img src="./img/LOGO/youtube.png" alt="Instagram">
+      </div>
+    </div>
+  </div>      
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

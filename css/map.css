@@ -1,0 +1,8 @@
+#map path {
+  stroke: black;
+  fill: #005eff;
+}
+
+#map :hover {
+  fill: #8400ff;
+}
