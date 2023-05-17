@@ -71,4 +71,69 @@ $(document).ready(function() {
     }
   });
   
+// EL PEPE
+$('#teide').on("focus", function() {
+  var hasId = page.attr('id')
+  if (hasId !== 'teide') {
+    page.attr('id', 'teide');
+    page.addClass('show');
+    $('h1').html("Teide");
+    $('.content').html(teideContent);
+  } else {
+    page.attr('id', 'default');
+    page.removeClass('show');
+  }
+});
+
+$('#garajonay').on("focus", function() {
+  var hasId = page.attr('id')
+  if (hasId !== 'garajonay') {
+    page.attr('id', 'garajonay');
+    page.addClass('show');
+    $('h1').html("Garajonay");
+    $('.content').html(garajonayContent);
+  } else {
+    page.attr('id', 'default');
+    page.removeClass('show');
+  }
+});
+
+$('#taburiente').on("focus", function() {
+  var hasId = page.attr('id')
+  if (hasId !== 'taburiente') {
+    page.attr('id', 'taburiente');
+    page.addClass('show');
+    $('h1').html("Taburiente");
+    $('.content').html(taburienteContent);
+  } else {
+    page.attr('id', 'default');
+    page.removeClass('show');
+  }
+});  
+
+$('#roqueNublo').on("focus", function() {
+  var hasId = page.attr('id')
+  if (hasId !== 'roqueNublo') {
+    page.attr('id', 'roqueNublo');
+    page.addClass('show');
+    $('h1').html("Roque Nublo");
+    $('.content').html(roqueNubloContent);
+  } else {
+    page.attr('id', 'default');
+    page.removeClass('show');
+  }
+});
+
+$('#timanfaya').on("focus", function() {
+  var hasId = page.attr('id')
+  if (hasId !== 'timanfaya') {
+    page.attr('id', 'timanfaya');
+    page.addClass('show');
+    $('h1').html("Timanfaya");
+    $('.content').html(timanfayaContent);
+  } else {
+    page.attr('id', 'default');
+    page.removeClass('show');
+  }
+});
 });
